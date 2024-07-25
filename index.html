@@ -791,129 +791,232 @@
 </div>
 <!-- End Gallery -->
         <!-------------------------------------------------------------------------------------------->
+        <title>Masonry Gallery and Survey</title>
+        <style>
+          /* General styles */
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+        
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+          }
+        
+          .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+          }
+        
+          .flex-item {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+          }
+        
+          .flex-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+        
+          /* Masonry layout styles */
+          .masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin-bottom: 20px;
+          }
+        
+          .masonry figure {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          }
+        
+          .masonry img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+          }
+        
+          .masonry figcaption {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+          }
+        
+          /* Responsive adjustments */
+          @media (max-width: 768px) {
+            .masonry {
+              grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+          }
+        
+          @media (max-width: 480px) {
+            .masonry {
+              grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+              grid-gap: 10px;
+            }
+          }
+        
+          /* Survey styles */
+          .custom-survey {
+            margin-bottom: 20px;
+          }
+        
+          .custom-radio-group-survey,
+          .custom-checkbox-group-survey {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+          }
+        
+          .custom-radio-group-survey div,
+          .custom-checkbox-group-survey div {
+            margin-bottom: 5px;
+          }
+        
+          .custom-radio-group-survey label,
+          .custom-checkbox-group-survey label {
+            display: block;
+            cursor: pointer;
+            padding-left: 25px;
+            position: relative;
+          }
+        
+          .custom-radio-group-survey input[type="radio"],
+          .custom-checkbox-group-survey input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+        
+          .custom-radio-group-survey label:before,
+          .custom-checkbox-group-survey label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 17px;
+            height: 17px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        
+          .custom-radio-group-survey input[type="radio"]:checked + label:before,
+          .custom-checkbox-group-survey input[type="checkbox"]:checked + label:before {
+            border-color: #2196F3;
+            background-color: #2196F3;
+          }
+        
+          .custom-radio-group-survey label:after,
+          .custom-checkbox-group-survey label:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+        
+          .custom-radio-group-survey input[type="radio"]:checked + label:after,
+          .custom-checkbox-group-survey input[type="checkbox"]:checked + label:after {
+            display: block;
+          }
+        
+          .custom-radio-group-survey label:after {
+            left: 5px;
+            top: 6px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        
+          .custom-checkbox-group-survey label:after {
+            left: 5px;
+            top: 3px;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+          }
+        
+          .custom-textbox-survey {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+          }
+        </style>
+        </head>
+        <body>
+        
         <!-- Start Masonry -->
-<div class="flex-row">
-  <div class="flex-item flex-column">
-    <h2 id="masonry">Masonry (responsive size)</h2>
-    <hr>
-    <p class="text">
-      Explore our gallery in a beautiful masonry layout.
-    </p>
-  </div>
-</div>
-
-<div class="masonry add-top-margin-small add-bottom-margin-small">
-  <figure>
-    <img src="img/masonry-image1.jpg" alt="Masonry Image 1">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Modern Urban Apartments</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image2.jpg" alt="Masonry Image 2">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Luxury Villa Developments</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image3.jpg" alt="Masonry Image 3">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Mixed-Use Commercial Spaces</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image4.jpg" alt="Masonry Image 4">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Residential Complex</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image5.jpg" alt="Masonry Image 5">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Community Facilities</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image6.jpg" alt="Masonry Image 6">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Outdoor Spaces</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image7.jpg" alt="Masonry Image 7">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Interior Designs</figcaption>
-  </figure>
-  <figure>
-    <img src="img/masonry-image8.jpg" alt="Masonry Image 8">
-    <div>Credit: Photographer Name</div>
-    <figcaption>Green Initiatives</figcaption>
-  </figure>
-</div>
-
-<div class="flex-row">
-  <div class="flex-item flex-column">
-    <p class="text">
-      Click on each image to view more details about our projects.
-    </p>
-  </div>
-</div>
-<!-- End Masonry -->---------------------------------------------------->
-        <!--Start Survey-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="survey">Survey</h2>
+            <h2 id="masonry">Hey there,Explore again (other beautiful houses)</h2>
             <hr>
             <p class="text">
-            
-            </p>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">1. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey add-top-margin">
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2596" id="scenario-question-sq-1508-item-0"> <label class="break-long-url" for="scenario-question-sq-1508-item-0">Strongly Agree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2597" id="scenario-question-sq-1508-item-1"> <label class="break-long-url" for="scenario-question-sq-1508-item-1">Agree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2598" id="scenario-question-sq-1508-item-2"> <label class="break-long-url" for="scenario-question-sq-1508-item-2">Neutral</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2599" id="scenario-question-sq-1508-item-3"> <label class="break-long-url" for="scenario-question-sq-1508-item-3">Disagree</label></div>
-                <div><input type="radio" name="scenario-question-sq-1508-scale" value="2600" id="scenario-question-sq-1508-item-4"> <label class="break-long-url" for="scenario-question-sq-1508-item-4">Strongly Disagree</label></div>
-              </div>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">2. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey add-top-margin">
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2596" id="scenario-question-sq-1510-item-0"> <label class="break-long-url" for="scenario-question-sq-1510-item-0">Strongly Agree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2597" id="scenario-question-sq-1510-item-1"> <label class="break-long-url" for="scenario-question-sq-1510-item-1">Agree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2598" id="scenario-question-sq-1510-item-2"> <label class="break-long-url" for="scenario-question-sq-1510-item-2">Neutral</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2599" id="scenario-question-sq-1510-item-3"> <label class="break-long-url" for="scenario-question-sq-1510-item-3">Disagree</label></div>
-                <div><input type="checkbox" name="scenario-question-sq-1508-scale" value="2600" id="scenario-question-sq-1510-item-4"> <label class="break-long-url" for="scenario-question-sq-1510-item-4">Strongly Disagree</label></div>
-              </div>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">3. Do you have any comments for this study?</span>
-              <textarea class="custom-textbox-survey add-top-margin" placeholder="(max 500 characters)" maxlength="500"></textarea>
-            </div>
-            <div class="custom-survey add-top-margin add-bottom-margin">
-              <span class="text">4. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.</span>
-              <div class="custom-radio-group-survey image-only add-top-margin">
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2720" id="scenario-question-sq-1545-item-2"><label for="scenario-question-sq-1545-item-2">
-                    <figure><img src="https://images.unsplash.com/photo-1597914377769-db5167cb0221?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=774&amp;q=80">
-                      <div>Credit: Justus Menke</div>
-                      <figcaption>Phasellus viverra nulla ut metus varius laoreet.</figcaption>
-                    </figure>
-                  </label> </div>
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2726" id="scenario-question-sq-1545-item-4"><label for="scenario-question-sq-1545-item-4">
-                    <figure><img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2874&amp;q=80">
-                      <div>Credit: Chris Montgomery</div>
-                      <figcaption>Nam eget dui. Etiam rhoncus</figcaption>
-                    </figure>
-                  </label> </div>
-                <div> <input type="checkbox" name="scenario-question-sq-1545-scale" value="2721" id="scenario-question-sq-1545-item-5"><label for="scenario-question-sq-1545-item-5">
-                    <figure><img src="https://images.unsplash.com/photo-1506485338023-6ce5f36692df?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80">
-                      <div>Credit: Jazmin Quaynor</div>
-                      <figcaption>Etiam ultricies nisi vel augue.</figcaption>
-                    </figure>
-                  </label> </div>
-              </div>
-            </div>
-            <p class="text">
-              
+              Explore our gallery in a beautiful way.
             </p>
           </div>
         </div>
-        <!--End Survey-->
+        
+        <div class="masonry add-top-margin-small add-bottom-margin-small">
+          <figure>
+            <img src="https://i.pinimg.com/564x/6c/e0/38/6ce038ec5a3d30039bdf0b9c345d9e7a.jpg" alt="Masonry Image 1">
+            <div>Credit: Nabahinda Aisha</div>
+            <figcaption>Modern Urban Apartments</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/50/2a/14/502a1492ac0a5bedfc510e85662e662b.jpg" alt="Masonry Image 2">
+            <div>Credit: nabahinda</div>
+            <figcaption>Great House</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/736x/9b/65/c1/9b65c16c30b45ce6395a3b11a69a284c.jpg" alt="Masonry Image 3">
+            <div>Credit: nabahinda</div>
+            <figcaption>House with the Swimming Pool</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/fb/91/c6/fb91c64cf6f5a56dbfe2734aef2af9c9.jpg" alt="Masonry Image 4">
+            <div>Credit: Nabahinda</div>
+            <figcaption>Residential Complex</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/13/c6/a6/13c6a6aab1da2a0979113ba66429b678.jpg" alt="Masonry Image 5">
+            <div>Credit: Nabahinda</div>
+            <figcaption>Community Facilities</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/ef/c1/42/efc1426b730813b14dcc22dcfec4efa4.jpg" alt="Masonry Image 6">
+            <div>Credit: nabahinda</div>
+            <figcaption>Outdoor Spaces</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/9a/20/fa/9a20fa2478aaa6e7e37c9f68bae8297b.jpg" alt="Masonry Image 7">
+            <div>Credit: nabahinda</div>
+            <figcaption>Interior Designs</figcaption>
+          </figure>
+          <figure>
+            <img src="https://i.pinimg.com/564x/0b/1e/62/0b1e6257c965121b811ae20aebed0c2e.jpg" alt="Masonry Image 8">
+            <div>Credit: nabahinda</div>
+            <figcaption>House Near the Beach</figcaption>
+          </figure>
+        </div>
+        <!-- End Masonry -->
         <!-------------------------------------------------------------------------------------------->
         <!--Start Credits-->
         <div class="flex-row">
