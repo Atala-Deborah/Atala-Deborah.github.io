@@ -1,50 +1,123 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Smart</title>
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="css/frame.css">
+  <link rel="stylesheet" href="css/controls.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/footer.js"></script>
+  <!-- Internal CSS -->
   <style>
-    .menu-index {
-      color: rgb(255, 255, 255) !important;
-      opacity: 1 !important;
-      font-weight: 700 !important;
+    /* General styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      background-color: #f6f8f9;
+      margin: 0;
+      padding: 0;
+    }
+    /* Header styles */
+    .header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    /* Navigation menu styles */
+    .menu-container {
+      background-color: #444;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .menu-container a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.2rem;
+    }
+    .menu-container a:hover {
+      text-decoration:  underline;
+    }
+    /* Banner styles */
+    .banner {
+  background: url('https://i.ebayimg.com/images/g/SP4AAOSwrWdk5IzY/s-l1600.webp') no-repeat center;
+  background-size: cover;
+  height: 300px; /* Increased height for better visibility */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px; /* Adjusted margin for spacing */
+  position: relative; /* Ensure content inside the banner is positioned relative */
+}
+    }
+    .banner-content {
+      max-width: 800px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .banner h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .banner p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .banner a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .banner {
+        height: 200px; /* Adjust banner height for smaller screens */
+      }
+      .banner h2 {
+        font-size: 2rem; /* Decrease font size for smaller screens */
+      }
+      .banner p {
+        font-size: 1rem; /* Decrease font size for smaller screens */
+      }
     }
   </style>
 </head>
-
 <body>
-  <div class="menu-container"></div>
-  <div class="content-container">
-    <!-------------------------------------------------------------------------------------------->
-    <!--Start Header-->
-    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+  <div class="menu-container">
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</0754702680(managing director),0772414138(manager)>
+  </div>
+
+  <div class="container">
+    <!-- Start Header Section -->
     <div class="banner">
-      <div class="banner-table flex-column">
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the header area</h2>
-            <p class="text">
-              Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-              augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-              condimentum rhoncus, <a href="javascript:void(0)">sem quam semper libero</a>, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-              vel, luctus pulvinar, hendrerit id, lorem.
-            </p>
-          </div>
-        </div>
+      <div class="banner-content">
+        <h2>Welcome to Your Property Management Solution</h2>
+        <p>
+          Manage your properties efficiently with our comprehensive app. Whether you're a landlord, property manager, or tenant, our platform simplifies tasks like maintenance requests, rent payments, and communication.
+        </p>
+        <p>
+          Explore the benefits of streamlined operations and enhanced tenant satisfaction. <a href="#">Learn more</a> about how we can transform your property management experience.
+        </p>
       </div>
     </div>
-    <!--End Header-->
+    <!-- End Header Section -->
+
     <!-------------------------------------------------------------------------------------------->
     <div class="content">
       <div class="content-table flex-column">
