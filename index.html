@@ -352,14 +352,7 @@
       </style>
     </head>
     <body>
-      <!-- Table of Contents -->
-      <div class="flex-row">
-        <div class="flex-item">
-          <h3>Table of Contents</h3>
-          <ul>
-            <li><a href="#text-only">Text Only</a></li>
-            <li><a href="#buttons-and-inputs">Buttons and Inputs</a></li>
-            <li><a href="#images-and-image-button">Images and Image Button</a></li>
+     mages-and-image-button">Images and Image Button</a></li>
             <li><a href="#text-around-image">Text around Image</a></li>
             <li><a href="#centered-image-and-table">Centered Image and Table</a></li>
             <li><a href="#adaptive-image">Adaptive Image</a></li>
@@ -376,230 +369,70 @@
     </html>
         <!-------------------------------------------------------------------------------------------->
         <!-- Start Text Only Section -->
-<div class="flex-row">
-  <div class="flex-item flex-column">
-    <h2 id="text-only">Text Only</h2>
-    <hr>
-    <p class="text">
-      This section demonstrates various formatting options and content presentation methods on our property management app website.
-    </p>
-    <p class="text">
-      Here are some examples of text and lists:
-    </p>
-    <h3>Break Long URL</h3>
-    <p class="text">
-      <a class="break-long-url" target="_blank" href="https://www.example.com/long-url">
-        Example URL: https://www.example.com/long-url
-      </a>
-    </p>
-    <h3>Nested List</h3>
-    <p class="text">
-      This is a nested list example:
-    </p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2
-        <ul>
-          <li>Sub-item 2.1</li>
-          <li>Sub-item 2.2</li>
-          <li>Sub-item 2.3</li>
-        </ul>
-      </li>
-      <li>Item 3</li>
-    </ul>
-    <h3>List with Customized Reverse Numbering</h3>
-    <ol class="publication C-list">
-      <li>
-        <p class="text-small-margin">
-          Example of a customized list item.
-        </p>
-      </li>
-      <li>
-        <p class="text-small-margin">
-          Another list item with details.
-        </p>
-      </li>
-      <li>
-        <p class="text-small-margin">
-          Additional list item demonstrating formatting options.
-        </p>
-      </li>
-    </ol>
-    <h3>Math Equations</h3>
-    <p class="text">
-      Example of a mathematical equation:
-    </p>
-    <img class="image center"
-      src="https://latex.codecogs.com/svg.latex?C\cdot(3\sin\theta_1+3\sin\theta_2-\cos\theta_1-\cos\theta_2)"
-      alt="Math Equation" style="max-width: 300px;">
-  </div>
-</div>
-<!-- End Text Only Section -->
-
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="buttons-and-inputs">Buttons and Inputs</h2>
-            <hr>
-            <p class="text">
-              
-            </p>
-            <div class="control-group">
-              <button class="custom-button">Default</button>
-              <button class="custom-button custom-button-primary">Primary</button>
-              <button class="custom-button custom-button-danger">Danger</button>
-              <button class="custom-button custom-button-info">Info</button>
-              <button class="custom-button" disabled>Disabled</button>
-              <a class="custom-button" target="_blank" href="https://github.com/yenchiah/project-website-template" target="_blank">Hyperlink</a>
-              <button class="custom-button custom-button-primary stretch-on-mobile">Stretch on Mobile</button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button pulse-black">Pulse</button>
-              <button class="custom-button custom-button-primary pulse-primary">Pulse</button>
-              <button class="custom-button custom-button-danger pulse-danger">Pulse</button>
-              <button class="custom-button custom-button-info pulse-info">Pulse</button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/home.png"></button>
-              <button class="custom-button-flat" disabled><img src="img/home.png"></button>
-              <button class="custom-button-flat small"><img src="img/home.png"></button>
-              <button class="custom-button-flat large"><img src="img/home.png"></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/calendar.png"></button>
-              <button class="custom-button-flat"><img src="img/play.png"></button>
-              <button class="custom-button-flat"><img src="img/pause.png"></button>
-              <button class="custom-button-flat"><img src="img/stop.png"></button>
-              <button class="custom-button-flat"><img src="img/terrain.png"></button>
-              <button class="custom-button-flat"><img src="img/close.png"></button>
-              <button class="custom-button-flat"><img src="img/collection.png"></button>
-              <button class="custom-button-flat"><img src="img/next.png"></button>
-              <button class="custom-button-flat"><img src="img/back.png"></button>
-              <button class="custom-button-flat"><img src="img/setting.png"></button>
-              <button class="custom-button-flat"><img src="img/book.png"></button>
-              <button class="custom-button-flat"><img src="img/user.png"></button>
-              <button class="custom-button-flat"><img src="img/share.png"></button>
-              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
-                <img src="img/link.png">
-              </a>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/home.png"><span>Home</span></button>
-              <button class="custom-button-flat" disabled><img src="img/home.png"><span>Disabled</span></button>
-              <button class="custom-button-flat small"><img src="img/home.png"><span>Small</span></button>
-              <button class="custom-button-flat large"><img src="img/home.png"><span>Large</span></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat"><img src="img/calendar.png"><span>Calendar</span></button>
-              <button class="custom-button-flat"><img src="img/play.png"><span>Play</span></button>
-              <button class="custom-button-flat"><img src="img/stop.png"><span>Stop</span></button>
-              <button class="custom-button-flat"><img src="img/terrain.png"><span>Terrain</span></button>
-              <button class="custom-button-flat"><img src="img/close.png"><span>Close</span></button>
-              <button class="custom-button-flat"><img src="img/collection.png"><span>Collection</span></button>
-              <button class="custom-button-flat"><img src="img/next.png"><span>Next</span></button>
-              <button class="custom-button-flat"><img src="img/back.png"><span>Back</span></button>
-              <button class="custom-button-flat"><img src="img/setting.png"><span>Setting</span></button>
-              <button class="custom-button-flat"><img src="img/book.png"><span>Tutorial</span></button>
-              <button class="custom-button-flat"><img src="img/user.png"><span>User</span></button>
-              <button class="custom-button-flat"><img src="img/share.png"><span>Share</span></button>
-              <a class="custom-button-flat" href="https://github.com/yenchiah/project-website-template" target="_blank">
-                <img src="img/link.png"><span>Hyperlink</span>
-              </a>
-              <button class="custom-button-flat stretch-on-mobile"><img src="img/play.png"><span>Stretch on Mobile</span></button>
-            </div>
-            <div class="control-group">
-              <button class="custom-button-flat pulse-black"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-primary"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-danger"><img src="img/home.png"><span>Pulse</span></button>
-              <button class="custom-button-flat pulse-info"><img src="img/home.png"><span>Pulse</span></button>
-            </div>
-            <p class="text">
-              
-            </p>
-          </div>
+        <title>Sign Up - Property Management App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Join Us Here, Dear Tenant</h1>
+            <form id="signUpForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <input type="submit" value="Sign Up">
+                <div class="text-center">
+                    <p>Or sign up with:</p>
+                    <button class="social-button social-button-google">Google</button>
+                    <button class="social-button social-button-android">Android</button>
+                </div>
+                <div class="text-center">
+                    <p>Already have an account? <a href="login.html">Log in here</a></p>
+                </div>
+            </form>
         </div>
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-            <p class="text badge-text">Large Badge Caption!</p>
-          </div>
-          <div class="flex-item flex-column">
-            <div class="control-group">
-              <a href="javascript:void(0)" target="_blank" class="custom-image-button">
-                <img src="img/app-store-badge.png" width="150">
-              </a>
-              <a href="javascript:void(0)" target="_blank" class="custom-image-button">
-                <img src="img/google-play-badge.png" width="150">
-              </a>
+    </body>
+    </html>
+    <title>Log In - Property Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Back!</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
             </div>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              
-            </p>
-            <div class="control-group">
-              <input class="custom-textbox stretch-on-mobile" type="text" placeholder="e.g., 15213">
-              <textarea class="custom-textbox stretch-on-mobile" placeholder="e.g., 15213"></textarea>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
             </div>
-            <div class="control-group">
-              <input class="custom-textbox stretch-on-mobile" value="https://yenchiah.me/" type="text" readonly>
-              <textarea class="custom-textbox stretch-on-mobile" readonly>Phasellus viverra nulla ut metus varius laoreet.</textarea>
+            <input type="submit" value="Log In">
+            <div class="text-center">
+                <p>Or sign in with:</p>
+                <button class="social-button social-button-google">Google</button>
+                <button class="social-button social-button-android">Android</button>
             </div>
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <!--End Text with Buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Images and Image buttons-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="images-and-image-button">Images and Image Button</h2>
-            <hr>
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <div class="flex-row-space-between">
-          <div class="flex-item flex-column">
-            <img class="image max-width-400" src="img/dummay-img.png">
-            <p class="image-caption">Image Caption</p>
-          </div>
-          <div class="flex-item flex-column">
-            <a href="https://github.com/yenchiah/project-website-template" target="_blank" class="image max-width-400">
-              <img src="img/dummay-img.png">
-            </a>
-            <p class="image-caption">Image Button Caption</p>
-          </div>
-        </div>
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <p class="text">
-              
-            </p>
-          </div>
-        </div>
-        <!--End Text with Images and Image buttons-->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="text-around-image">Text around Image</h2>
-            <hr>
-            <p class="text">
-              <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
-              
-            </p>
-          </div>
-        </div>
-        <!--End Text around Image-->
-        <!-------------------------------------------------------------------------------------------->
-      </div>
+            <div class="text-center">
+                <p>Not a member? <a href="signup.html">Register now</a></p>
+            </div>
+        </form>
     </div>
+</body>
+</html>
     <div class="banner" style="background: url('https://i.pinimg.com/564x/1a/42/08/1a4208b7c13e84c3e07a5778a0103e1b.jpg') no-repeat center; background-size: cover; height: 500px;">
       <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
         <div class="flex-row">
@@ -613,149 +446,21 @@
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="content-table flex-column">
+    
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Centered Image and Table-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="centered-image-and-table" class="no-top-margin">Centered Image and Table</h2>
-            <hr>
-            <p class="text">
-              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
-              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
-              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
-              custosi traductores. At solmen va esser.
-            </p>
-            <p class="text text-center graph-title">
-              This image does not scroll and only scale.
-            </p>
-            <img class="image center max-width-400 add-top-margin-small" src="img/dummay-img.png">
-            <p class="text text-center graph-title">
-              This image scrolls on mobile with a fixed height.
-            </p>
-            <div class="scrollable-image-container center add-top-margin-small">
-              <img class="scrollable-image center" src="img/dummay-img.png">
-            </div>
-            <p class="text">
-              
-            </p>
-            <p class="text text-center graph-title">
-              
-            </p>
-            <div class="custom-table-container center add-top-margin-small">
-              <table class="custom-table">
-                <thead>
-                  <tr class="bg-color-gray">
-                    <th>Number of</th>
-                    <th class="text-center">Unique Users</th>
-                    <th class="text-center">Smell Reports</th>
-                    <th class="text-center">Interaction Events</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Enthusiasts</td>
-                    <td class="text-center">9.4%</td>
-                    <td class="text-center">50.6%</td>
-                    <td class="text-center">44.8%</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>Explorers</td>
-                    <td class="text-center">36.1%</td>
-                    <td class="text-center">37.3%</td>
-                    <td class="text-center">27.3%</td>
-                  </tr>
-                  <tr>
-                    <td>Contributors</td>
-                    <td class="text-center">13.0%</td>
-                    <td class="text-center">12.1%</td>
-                    <td class="text-center">n/a</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>Observers</td>
-                    <td class="text-center">41.6%</td>
-                    <td class="text-center">n/a</td>
-                    <td class="text-center">27.9%</td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td>Size (N)</td>
-                    <td class="text-center">2,237</td>
-                    <td class="text-center">8,112</td>
-                    <td class="text-center">79,447</td>
-                  </tr>
-                </tfoot>
-              </table>
-              <div class="custom-table-container center add-top-margin-small">
-                <table class="custom-table">
-                  <thead>
-                    <tr class="bg-color-gray">
-                      <th class="text-center">Year</th>
-                      <th class="text-center">Occupancy Rate (%)</th>
-                      <th class="text-center">Rent Increase (%)</th>
-                      <th class="text-center">Maintenance Requests</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="text-center">2019</td>
-                      <td class="text-center">95.5</td>
-                      <td class="text-center">3.2</td>
-                      <td class="text-center">1150</td>
-                    </tr>
-                    <tr class="bg-color-light-gray">
-                      <td class="text-center">2018</td>
-                      <td class="text-center">93.8</td>
-                      <td class="text-center">2.9</td>
-                      <td class="text-center">1050</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">2017</td>
-                      <td class="text-center">91.2</td>
-                      <td class="text-center">3.5</td>
-                      <td class="text-center">950</td>
-                    </tr>
-                    <tr class="bg-color-light-gray">
-                      <td class="text-center">2016</td>
-                      <td class="text-center">89.5</td>
-                      <td class="text-center">3.1</td>
-                      <td class="text-center">850</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">2015</td>
-                      <td class="text-center">87.8</td>
-                      <td class="text-center">2.8</td>
-                      <td class="text-center">750</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- End Table Section -->
-        <!-------------------------------------------------------------------------------------------->
-        <!--Start Text with Adaptive Image-->
-        <div class="flex-row">
-          <div class="flex-item flex-column">
-            <h2 id="adaptive-image">Adaptive Image</h2>
-            <hr>
-            <p class="text">
-            
-            </p>
-            <a class="image adaptive-image" style="background-image: url('img/dummay-img-long.png'); min-height: 150px;" href="img/dummay-img-long.png" target="_blank"></a>
-            <p class="text">
-            </p>
-          </div>
-        </div>
-        <!--End Text with Adaptive Image-->
+       ------------------------------------------------------------->
+        
+        
+          
+          
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>
-    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 500px;">
+    <div class="banner" style="background: url('https://i.pinimg.com/564x/7a/a6/8e/7aa68edb92859785020dcb3117e0860c.jpg') no-repeat center; background-size: cover; height: 500px;">
       <div class="banner-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 class="add-top-margin-small">This is the two-banner area with a photo</h2>
+            <h2 class="add-top-margin-small">one of the houses</h2>
             <p class="text">Explore our property management solutions tailored for you.</p>
           </div>
         </div>
@@ -775,7 +480,7 @@
     
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
-            <img class="image" src="img/dummy-img1.png" alt="Image 1">
+            <img class="image" src="https://i.pinimg.com/564x/ce/89/6e/ce896eb536bc4740bddbee62a7c27e21.jpg" alt="Image 1">
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <p class="text">Experience seamless property listings and tenant management.</p>
@@ -785,7 +490,7 @@
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
             <video preload controls autoplay loop muted playsinline class="image">
-              <source src="vid/mov_bbb.mp4" type="video/mp4">
+              <source src=".mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -838,9 +543,7 @@
             <p class="text">
               Explore the geographic distribution of property conditions with our interactive heatmap.
             </p>
-            <div class="iframe-container">
-              <iframe class="iframe-in-body" src="https://yenchiah.me/geo-heatmap/smell.html" frameborder="0" allowfullscreen></iframe>
-            </div>
+            
             <p class="text">
               Gain insights into neighborhood trends and property management opportunities.
             </p>
