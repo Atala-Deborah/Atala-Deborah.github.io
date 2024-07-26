@@ -254,7 +254,7 @@
       <div class="details">
         <h3>Nagujja Rosler</h3>
         <p>Sales Director</p>
-        <p>Phone: +0785321470</p>
+        <p>Phone: +256785321470</p>
       </div>
     </div>
     <div class="about-item">
@@ -262,7 +262,7 @@
       <div class="details">
         <h3>Ggayi Edward</h3>
         <p>Marketing Manager</p>
-        <p>Phone: +0798541236</p>
+        <p>Phone: +256798541236</p>
       </div>
     </div>
     <div class="about-item">
@@ -270,7 +270,7 @@
       <div class="details">
         <h3>Tugume Farouk</h3>
         <p>Customer Support</p>
-        <p>Phone: +0763214890</p>
+        <p>Phone: +256763214890</p>
       </div>
     </div>
   </div>
@@ -372,67 +372,218 @@
         <title>Sign Up - Property Management App</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <div class="container">
-            <h1>Join Us Here, Dear Tenant</h1>
-            <form id="signUpForm">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
-                </div>
-                <input type="submit" value="Sign Up">
-                <div class="text-center">
-                    <p>Or sign up with:</p>
-                    <button class="social-button social-button-google">Google</button>
-                    <button class="social-button social-button-android">Android</button>
-                </div>
-                <div class="text-center">
-                    <p>Already have an account? <a href="login.html">Log in here</a></p>
-                </div>
-            </form>
-        </div>
-    </body>
-    </html>
-    <title>Log In - Property Management App</title>
-    <link rel="stylesheet" href="styles.css">
+    <body><style>
+      /* Inline CSS for demonstration. Use external stylesheet for production. */
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center; /* Centers all items horizontally */
+          text-align: center; /* Centers text inside the container */
+          padding: 20px;
+          background-color: #f9f9f9;
+      }
+
+      h1 {
+          font-size: 2em;
+          color: #333;
+          font-weight: bold;
+          margin-bottom: 20px;
+      }
+
+      .form-group {
+          width: 100%;
+          max-width: 300px; /* Adjusted to match the size of the username input box */
+          margin: 0 auto; /* Centers the form-group within the container */
+          text-align: left; /* Aligns the text inside the form-group to the left */
+      }
+
+      label {
+          display: block;
+          margin-bottom: 5px;
+          color: green; /* Green color for the label text */
+      }
+
+      input[type="text"],
+      input[type="password"] {
+          width: 100%; /* Makes the input field span the full width of the form-group */
+          padding: 10px;
+          border: 2px solid green; /* Green border for the input field */
+          border-radius: 4px;
+          margin-bottom: 10px;
+          box-sizing: border-box; /* Ensures padding and border are included in the width */
+      }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome Back!</h1>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="login-email">Email</label>
-                <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group">
-                <label for="login-password">Password</label>
-                <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
-            </div>
-            <input type="submit" value="Log In">
-            <div class="text-center">
-                <p>Or sign in with:</p>
-                <button class="social-button social-button-google">Google</button>
-                <button class="social-button social-button-android">Android</button>
-            </div>
-            <div class="text-center">
-                <p>Not a member? <a href="signup.html">Register now</a></p>
-            </div>
-        </form>
-    </div>
+  <div class="container">
+      <h1>Join Us Here, Dear Tenant</h1>
+      <form id="signUpForm">
+          <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" placeholder="Enter your username" required>
+          </div>
+          <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+          </div>
+      </form>
+  </div>
 </body>
 </html>
+<title>Sign Up - Property Management App</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    /* Inline CSS for demonstration. Use external stylesheet for production. */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers all items horizontally */
+        text-align: center; /* Centers text inside the container */
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    h1 {
+        font-size: 2em;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        max-width: 300px; /* Adjusted to match the size of the username input box */
+        margin: 0 auto; /* Centers the form-group within the container */
+        text-align: left; /* Aligns the text inside the form-group to the left */
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: green; /* Green color for the label text */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%; /* Makes the input field span the full width of the form-group */
+        padding: 10px;
+        border: 2px solid green; /* Green border for the input field */
+        border-radius: 4px;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* Ensures padding and border are included in the width */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full width for submit button */
+        padding: 10px;
+        border: none;
+        background-color: green; /* Green background for the submit button */
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .text-center {
+        text-align: center; /* Centers text inside the div */
+    }
+
+    .social-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 5px;
+        font-size: 1em;
+    }
+
+    .social-button img {
+        width: 24px; /* Size of the social icon */
+        height: 24px;
+        margin-right: 8px; /* Space between icon and text */
+    }
+
+    .social-button-google {
+        color: #db4437; /* Google color */
+    }
+
+    .social-button-android {
+        color: #a4c639; /* Android color */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Join Us Here, Dear Tenant</h1>
+    <form id="signUpForm">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        <input type="submit" value="Sign Up">
+        <div class="text-center">
+            <p>Or sign up with:</p>
+            <button class="social-button social-button-google">
+                <img src="path/to/google-icon.png" alt="Google Icon"> Google
+            </button>
+            <button class="social-button social-button-android">
+                <img src="path/to/android-icon.png" alt="Android Icon"> Android
+            </button>
+        </div>
+        <div class="text-center">
+            <p>Already have an account? <a href="login.html">Log in here</a></p>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h1>Welcome Back!</h1>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="login-email">Email</label>
+            <input type="email" id="login-email" name="login-email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Enter your password" required>
+        </div>
+        <input type="submit" value="Log In">
+        <div class="text-center">
+            <p>Or sign in with:</p>
+            <button class="social-button social-button-google">
+                <img src="path/to/google-icon.png" alt="Google Icon"> Google
+            </button>
+            <button class="social-button social-button-android">
+                <img src="path/to/android-icon.png" alt="Android Icon"> Android
+            </button>
+        </div>
+        <div class="text-center">
+            <p>Not a member? <a href="signup.html">Register now</a></p>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
     <div class="banner" style="background: url('https://i.pinimg.com/564x/1a/42/08/1a4208b7c13e84c3e07a5778a0103e1b.jpg') no-repeat center; background-size: cover; height: 500px;">
       <div class="banner-table flex-column" style="background-color: rgba(0, 0, 0, 0.5);">
         <div class="flex-row">
@@ -490,7 +641,7 @@
         <div class="flex-row">
           <div class="flex-item flex-item-stretch flex-column">
             <video preload controls autoplay loop muted playsinline class="image">
-              <source src="" type="video/mp4">
+              <source src="https://youtube.com/shorts/979Xb1BE6RY?si=mHdjV2C1_I7WyRh2" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -516,7 +667,7 @@
     
         <div class="flex-row">
           <div class="flex-item flex-item-stretch-2 flex-column">
-            <p class="text">Learn about our integrated tenant communication tools.</p>
+            <p class="text">have a look in one of our self contained houses,luxury furniture!</p>
           </div>
           <div class="flex-item flex-item-stretch flex-column">
             <video controls>
